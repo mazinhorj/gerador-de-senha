@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osmar Menezes da Silva">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/gif">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="register_container">
+        <div id="register_banner">
+            <div id="banner_layer">
+                <h1>Seja bem-vind@</h1>
+            </div>
+        </div>
+        <div id="register_form_h">
+            <h2>Vamos criar uma senha:</h2>
+            <form id="register_form">
+                <div id="alerta1" class="hide">
+                    <p>Utilize no mínimo 8 caracteres!</p>
+                </div>
+                <div id="alerta2" class="hide">
+                    <p>Marque pelo menos 1 opção!</p>
+                </div>
+                <div id="gerar_opt" class="">
+                    <p>Como você quer sua senha?</p>
+                    <div class="form_control">
+                        <label for="tamanho">Quantidade de caracteres:</label>
+                        <input type="number" name="tamanho" id="tamanho" value="10">
+                    </div>
+                    <div class="form_control">
+                        <label for="letras" class="toggle">Letras:
+                            <input type="checkbox" name="letras" id="letras" class="toggle__input" checked>
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                    <div class="form_control">
+                        <label for="numeros" class="toggle">Números:
+                            <input type="checkbox" name="numeros" id="numeros" class="toggle__input" checked>
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                    <div class="form_control">
+                        <label for="symbolos" class="toggle">Símbolos:
+                            <input type="checkbox" name="symbolos" id="symbolos" class="toggle__input" checked>
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                    <button id="gerar_btn">Gerar senha</button>
+                </div>
+                <div id="senha_gerada">
+                    <p>Sua nova senha:</p>
+                    <h4></h4>
+                    <button id="copiar_senha">Copiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
