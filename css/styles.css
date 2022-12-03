@@ -245,11 +245,13 @@ label.toggle {
 .toggle__fill::after {
     content: "";
     position: absolute;
+    margin-top: 2px;
+    margin-left: 2px;
     top: 0;
     left: 0;
-    height: var(--height);
-    width: var(--height);
-    border-radius: var(--border-radius);
+    height: calc(var(--height)*0.8);
+    width: calc(var(--height)*0.8);
+    border-radius: calc(var(--border-radius)*0.8);
     background: #f2f2f2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: transform 0.2s;
