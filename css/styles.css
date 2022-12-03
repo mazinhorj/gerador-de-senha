@@ -260,3 +260,17 @@ label.toggle {
 .toggle__input:checked ~ .toggle__fill::after {
     transform: translateX(var(--height));
 }
+
+footer, aside p {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer a, aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
